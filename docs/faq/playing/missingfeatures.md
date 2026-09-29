@@ -1,6 +1,7 @@
 ---
 title: "Why doesn’t X or Y gameplay feature work on Axolotl-PM? Is it a bug?"
 outline: deep
+description: Why do some gameplay features not work on Axolotl-PM?
 ---
 
 # Why doesn't X or Y gameplay feature work on Axolotl-PM? Is it a bug?

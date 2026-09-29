@@ -1,10 +1,26 @@
 import { defineConfig } from 'vitepress'
 import { tabsMarkdownPlugin } from "vitepress-plugin-tabs";
+import { footerMessage } from './footer'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "Axolotl-PM",
-  description: "Official home for Axolotl-PM",
+  description: "Official home for Axolotl-PM, an actively maintained fork of PMMP (PocketMine-MP) for Minecraft: Bedrock Edition servers.",
+  head: [
+    ['link', { rel: 'icon', href: '/favicon.ico' }]
+  ],
+  cleanUrls: true,
+  lastUpdated: true,
+  sitemap: {
+    hostname: 'https://axolotl-pm.org'
+  },
+  transformPageData(pageData) {
+    const canonicalUrl = `https://axolotl-pm.org/${pageData.relativePath}`
+      .replace(/index\.md$/, '')
+      .replace(/\.md$/, '')
+    pageData.frontmatter.head ??= []
+    pageData.frontmatter.head.push(['link', { rel: 'canonical', href: canonicalUrl }])
+  },
   // Sphinx curls quotes and dashes at render time (docutils smartquotes); this is the markdown-it equivalent.
   markdown: {
     typographer: true,
@@ -14,6 +30,10 @@ export default defineConfig({
   },
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
+    footer: {
+      message: footerMessage
+    },
+
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Documentation', link: '/docs' }
@@ -35,6 +55,7 @@ export default defineConfig({
               { text: 'NetherNet Usage', link: '/docs/installation/nethernet-usage' }
             ]
           },
+          { text: 'Migrating from PocketMine-MP (PMMP)', link: '/docs/migrating-from-pocketmine-mp' },
           { text: 'Basic usage', link: '/docs/basic-usage' },
           {
             text: 'Connecting',

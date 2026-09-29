@@ -1,6 +1,7 @@
 ---
 title: "Worlds"
 outline: deep
+description: World formats Axolotl-PM can load, including Bedrock LevelDB and converted Java 1.12 worlds, and how to add existing worlds or generate new ones.
 ---
 
 # Worlds
@@ -117,3 +118,7 @@ As of 5.37.2, there is currently no built-in way to teleport between worlds in A
 However, plugins can teleport player between worlds easily.
 
 You can find plugins on [Poggit](https://poggit.pmmp.io/plugins) for managing and teleporting between worlds.
+
+::: warning Warning
+Poggit is now read-only. Existing plugins can still be found there, but no new plugins or updates are being published.
+:::

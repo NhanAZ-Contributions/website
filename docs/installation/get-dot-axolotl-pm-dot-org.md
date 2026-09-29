@@ -1,6 +1,7 @@
 ---
 title: "Using the official installer (Linux/MacOS only)"
 outline: deep
+description: Using the official installer to install Axolotl-PM.
 ---
 
 # Using the official installer (Linux/MacOS only)

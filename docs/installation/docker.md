@@ -1,6 +1,7 @@
 ---
 title: "Using Docker (Linux only)"
 outline: deep
+description: Using Docker to run Axolotl-PM.
 ---
 
 # Using Docker (Linux only)
@@ -110,6 +111,10 @@ If the `POCKETMINE_PLUGINS` environment variable is set, the container will auto
 before starting Axolotl-PM.
 
 The list of plugins should be given in the format `PluginOne:1.2.3 PluginTwo:4.5.6`. The version part (`:4.5.6`) is optional.
+
+::: warning Warning
+Poggit is now read-only, so only plugins and versions that are already published there can be downloaded.
+:::
 
 ::: danger Caution
 Plugins won't be redownloaded if they're already in the *plugins* volume, even if the version is different.

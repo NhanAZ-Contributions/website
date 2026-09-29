@@ -1,6 +1,7 @@
 ---
 title: "Failed loading opcache.so (or other PHP extensions)"
 outline: deep
+description: Troubleshooting extension load failures.
 ---
 
 # Failed loading opcache.so (or other PHP extensions)

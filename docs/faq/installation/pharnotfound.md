@@ -1,6 +1,7 @@
 ---
 title: "PocketMine-MP.phar not found when running server"
 outline: deep
+description: PocketMine-MP.phar not found when running the server.
 ---
 
 # PocketMine-MP.phar not found when running server

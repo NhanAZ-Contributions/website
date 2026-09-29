@@ -1,6 +1,7 @@
 ---
 title: "Frequently Asked Questions"
 outline: deep
+description: Commonly asked questions about Axolotl-PM plugin formats, such as loading a .zip plugin.
 ---
 
 # Frequently Asked Questions

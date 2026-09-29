@@ -1,6 +1,7 @@
 ---
 title: "Can I run a plugin from source without creating a .phar?"
 outline: deep
+description: Use DevTools when you want to run a plugin without creating a phar.
 ---
 
 # Can I run a plugin from source without creating a `.phar`?

@@ -1,6 +1,7 @@
 ---
 title: "Plugin formats"
 outline: deep
+description: Plugin formats supported by Axolotl-PM.
 ---
 
 # Plugin formats

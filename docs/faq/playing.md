@@ -1,6 +1,7 @@
 ---
 title: "Playing"
 outline: deep
+description: Troubleshooting gameplay-related issues.
 ---
 
 # Playing

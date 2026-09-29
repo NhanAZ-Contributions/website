@@ -1,6 +1,7 @@
 ---
 title: "VPN connection and gameplay issues"
 outline: deep
+description: A VPN usually causes connection problems in Minecraft Bedrock. Adjust the MTU size accordingly to address the issue.
 ---
 
 # VPN connection and gameplay issues

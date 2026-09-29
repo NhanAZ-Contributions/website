@@ -1,6 +1,7 @@
 ---
 title: "Connecting"
 outline: deep
+description: How to let players join your Axolotl-PM server by adding it in Minecraft, opening firewall ports, and forwarding ports on your router.
 ---
 
 # Connecting

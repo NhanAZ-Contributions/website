@@ -1,6 +1,7 @@
 ---
 title: "Minecraft can’t connect to a server on the same computer on Windows"
 outline: deep
+description: Minecraft for Windows is not able to connect to a server on the same computer. Not the case as of the GDK migration.
 ---
 
 ::: info Note

@@ -1,6 +1,7 @@
 ---
 title: "“Login timeout” when attempting to connect"
 outline: deep
+description: Troubleshooting connection problems related to a login timeout.
 ---
 
 # "Login timeout" when attempting to connect

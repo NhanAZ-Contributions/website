@@ -1,6 +1,7 @@
 ---
 title: "Permissions"
 outline: deep
+description: How the Axolotl-PM permission system works, including permission names, group permissions such as pocketmine.group.operator, and how conflicting values are resolved.
 ---
 
 # Permissions
@@ -13,6 +14,10 @@ Axolotl-PM includes a powerful permission system, similar in functionality to th
 In addition, plugins can offer permissions to allow customising access to behaviours that they offer.
 
 Axolotl-PM doesn't directly offer any way to use permissions at the time of writing (August 2022), but you can find permission management plugins in the "Admin Tools" section on Poggit.
+
+::: warning Warning
+Poggit is now read-only. Existing plugins can still be found there, but no new plugins or updates are being published.
+:::
 
 ## Built-in permissions
 

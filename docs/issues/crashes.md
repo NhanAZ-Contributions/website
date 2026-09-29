@@ -1,6 +1,7 @@
 ---
 title: "Crashes"
 outline: deep
+description: Troubleshooting crashes in Axolotl-PM.
 ---
 
 # Crashes

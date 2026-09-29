@@ -1,6 +1,7 @@
 ---
 title: "Adding the server to Minecraft"
 outline: deep
+description: Adding your server to Minecraft.
 ---
 
 # Adding the server to Minecraft

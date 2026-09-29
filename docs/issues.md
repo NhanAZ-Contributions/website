@@ -1,6 +1,7 @@
 ---
 title: "Bugs & Crashes"
 outline: deep
+description: What to do when Axolotl-PM crashes or you find a bug, including crashdump files, the Crash Archive, and bug reports on GitHub.
 ---
 
 # Bugs & Crashes

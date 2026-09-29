@@ -1,6 +1,7 @@
 ---
 title: "How to add a new vanilla block to Axolotl-PM"
 outline: deep
+description: Implementing a new vanilla block in Axolotl-PM.
 ---
 
 # How to add a new *vanilla* block to Axolotl-PM

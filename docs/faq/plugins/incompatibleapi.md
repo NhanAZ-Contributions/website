@@ -1,6 +1,7 @@
 ---
 title: "What does “Incompatible API version” mean when loading a plugin?"
 outline: deep
+description: Troubleshooting 'Incompatible API version' when loading a plugin.
 ---
 
 # What does "Incompatible API version" mean when loading a plugin?

@@ -1,6 +1,7 @@
 ---
 title: "Can’t connect to the server after updating Minecraft"
 outline: deep
+description: Troubleshooting connection problems related to an outdated server.
 ---
 
 # Can't connect to the server after updating Minecraft

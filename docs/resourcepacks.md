@@ -1,6 +1,7 @@
 ---
 title: "Resource Packs & Behaviour Packs"
 outline: deep
+description: How to load .zip and .mcpack resource packs on an Axolotl-PM server with resource_packs.yml. Behaviour packs are not supported.
 ---
 
 # Resource Packs & Behaviour Packs

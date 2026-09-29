@@ -1,6 +1,7 @@
 ---
 title: "Installation"
 outline: deep
+description: Troubleshooting installation-related issues.
 ---
 
 # Installation

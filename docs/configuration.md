@@ -1,6 +1,7 @@
 ---
 title: "Configuration"
 outline: deep
+description: Overview of the Axolotl-PM configuration files, including server.properties, pocketmine.yml, resource_packs.yml, and the op and ban lists.
 ---
 
 # Configuration

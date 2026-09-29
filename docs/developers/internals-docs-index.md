@@ -1,6 +1,7 @@
 ---
 title: "Axolotl-PM internal development docs"
 outline: deep
+description: Internal development docs for Axolotl-PM.
 ---
 
 # Axolotl-PM internal development docs

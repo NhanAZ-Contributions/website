@@ -1,6 +1,7 @@
 ---
 title: "Installing/updating manually"
 outline: deep
+description: Installing Axolotl-PM manually.
 ---
 
 # Installing/updating manually

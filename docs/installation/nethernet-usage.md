@@ -1,6 +1,7 @@
 ---
 title: NetherNet Usage
 outline: deep
+description: NetherNet is a brand-new transport for Minecraft Bedrock Edition that is replacing RakNet.
 ---
 
 # NetherNet Usage

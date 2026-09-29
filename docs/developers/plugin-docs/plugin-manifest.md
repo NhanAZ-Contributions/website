@@ -1,6 +1,7 @@
 ---
 title: "plugin.yml fields"
 outline: deep
+description: plugin.yml fields for Axolotl-PM.
 ---
 
 # `plugin.yml` fields

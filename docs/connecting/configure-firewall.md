@@ -1,6 +1,7 @@
 ---
 title: "Opening ports in your firewall"
 outline: deep
+description: Opening UDP ports 19132 (IPv4) and 19133 (IPv6) in Windows Firewall or ufw so that players can connect to your server. It is not required if you are not using a firewall at all.
 ---
 
 # Opening ports in your firewall

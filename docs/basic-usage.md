@@ -1,6 +1,7 @@
 ---
 title: "Basic usage"
 outline: deep
+description: How to start and stop an Axolotl-PM server, use the setup wizard, and keep the server running in the background on Linux or macOS with screen.
 ---
 
 # Basic usage

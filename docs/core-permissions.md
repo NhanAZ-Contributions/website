@@ -1,6 +1,7 @@
 ---
 title: "List of Axolotl-PM core permissions"
 outline: deep
+description: Full list of built-in Axolotl-PM permissions, such as pocketmine.command.ban.player, with what each one allows and which permissions it implies.
 ---
 
 # List of Axolotl-PM core permissions

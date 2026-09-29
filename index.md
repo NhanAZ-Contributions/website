@@ -5,7 +5,7 @@ layout: home
 hero:
   name: "Axolotl-PM"
   text: "Official website for Axolotl-PM"
-  tagline: Axolotl-PM is a Minecraft Bedrock Edition server software written in PHP, C and C++.
+  tagline: Axolotl-PM is a Minecraft Bedrock Edition server software written in PHP, C and C++. Axolotl-PM forked PMMP and now continuing what PMMP did.
   actions:
     - theme: brand
       text: Getting Started

@@ -1,6 +1,7 @@
 ---
 title: "Installation & Updating"
 outline: deep
+description: Ways to install and update Axolotl-PM with the official installer for Linux and macOS, Docker, or a manual install, plus the setup requirements.
 ---
 
 # Installation & Updating

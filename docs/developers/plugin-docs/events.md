@@ -1,6 +1,7 @@
 ---
 title: "Events"
 outline: deep
+description: Events system in Axolotl-PM.
 ---
 
 # Events

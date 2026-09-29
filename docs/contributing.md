@@ -1,6 +1,7 @@
 ---
 title: "Contributing"
 outline: deep
+description: Ways to contribute to Axolotl-PM by reporting bugs, translating on Weblate, and submitting code through GitHub pull requests.
 ---
 
 # Contributing

@@ -1,6 +1,7 @@
 ---
 title: "Forwarding ports in your router"
 outline: deep
+description: How to forward your server's port in your router. This is not needed if you're running Axolotl-PM on a VPS.
 ---
 
 # Forwarding ports in your router

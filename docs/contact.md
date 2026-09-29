@@ -1,6 +1,7 @@
 ---
 title: "Contact and Support"
 outline: deep
+description: Get help with Axolotl-PM on the community Discord, or find out how to report bugs and crashes.
 ---
 
 # Contact and Support

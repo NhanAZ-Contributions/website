@@ -1,6 +1,7 @@
 ---
 title: "Connecting"
 outline: deep
+description: Troubleshooting connection-related issues.
 ---
 
 # Connecting

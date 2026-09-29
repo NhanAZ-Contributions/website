@@ -1,6 +1,7 @@
 ---
 title: "Setup requirements"
 outline: deep
+description: Setup requirements for Axolotl-PM. It requires a 64-bit CPU, a 64-bit operating system and 1GB RAM or better.
 ---
 
 # Setup requirements

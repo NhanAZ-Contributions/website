@@ -1,6 +1,7 @@
 ---
 title: "Plugin development docs"
 outline: deep
+description: Plugin development docs for Axolotl-PM.
 ---
 
 # Plugin development docs

@@ -1,6 +1,7 @@
 ---
 title: "Who is @shoghicp?"
 outline: deep
+description: shoghicp is the original creator of PocketMine-MP. He developed it from 2012 until 2016, when his job at Mojang forced him to stop.
 ---
 
 # Who is @shoghicp?

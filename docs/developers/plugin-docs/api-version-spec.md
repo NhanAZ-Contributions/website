@@ -1,6 +1,7 @@
 ---
 title: "API versioning"
 outline: deep
+description: Versioning policy of Axolotl-PM.
 ---
 
 # API versioning

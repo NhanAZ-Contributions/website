@@ -1,6 +1,7 @@
 ---
 title: "Standard plugin types"
 outline: deep
+description: A Phar plugin is the standard plugin type of Axolotl-PM. It is commonly used to distribute pre-made plugins, because it's easy for users to download and move around without needing to modify the plugin code.
 ---
 
 # Standard plugin types

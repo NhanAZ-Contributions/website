@@ -1,6 +1,7 @@
 ---
 title: "Implementing new Minecraft version support in Axolotl-PM"
 outline: deep
+description: How to implement new Minecraft version support in Axolotl-PM.
 ---
 
 # Implementing new Minecraft version support in Axolotl-PM

@@ -1,6 +1,7 @@
 ---
 title: "Stuck on “Locating server” or at downloading resource packs"
 outline: deep
+description: Troubleshooting connection problems related to connecting to the server / downloading resource packs.
 ---
 
 # Stuck on "Locating server" or at downloading resource packs

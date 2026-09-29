@@ -1,6 +1,7 @@
 ---
 title: "What does “Opening server on 0.0.0.0:19132” mean?"
 outline: deep
+description: What does 0.0.0.0:19132 mean?
 ---
 
 # What does "Opening server on 0.0.0.0:19132" mean?

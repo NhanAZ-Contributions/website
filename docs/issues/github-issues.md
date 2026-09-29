@@ -1,6 +1,7 @@
 ---
 title: "Reporting Bugs"
 outline: deep
+description: Reporting a bug on GitHub.
 ---
 
 # Reporting Bugs

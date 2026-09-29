@@ -1,6 +1,7 @@
 ---
 title: "I can’t get a .phar for a plugin. How do I create one?"
 outline: deep
+description: Use DevTools to create a phar from a plugin.
 ---
 
 # I can't get a `.phar` for a plugin. How do I create one?

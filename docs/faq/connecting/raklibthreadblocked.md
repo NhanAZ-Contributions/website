@@ -1,6 +1,7 @@
 ---
 title: "RakLib Thread Blocked x.x.x.x for x seconds"
 outline: deep
+description: IP x.x.x.x was blocked by RakLib Thread. Why?
 ---
 
 # RakLib Thread Blocked x.x.x.x for x seconds

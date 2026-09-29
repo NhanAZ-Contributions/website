@@ -1,6 +1,7 @@
 ---
 title: "Threading in PHP - WTF?"
 outline: deep
+description: Threading in PHP, WTF? Axolotl-PM uses pmmpthread to make use of threads. Threading in Axolotl-PM is very limited due to how the Zend API is designed.
 ---
 
 # Threading in PHP - WTF?

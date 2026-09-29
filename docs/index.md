@@ -1,6 +1,7 @@
 ---
 title: "Axolotl-PM"
 outline: deep
+description: Documentation for Axolotl-PM, a Minecraft Bedrock Edition server written in PHP and a maintained fork of PocketMine-MP. Covers installation, connecting, plugins, worlds and common issues.
 ---
 
 <figure class="align-center">
@@ -43,9 +44,14 @@ If you just want to play **vanilla survival multiplayer**, consider using the [o
 If that's not an option for you, you may be able to add some of Axolotl-PM's missing features using plugins from [Poggit](https://poggit.pmmp.io/plugins), or write plugins to implement them yourself.
 :::
 
+::: warning Warning
+Poggit is now read-only. Existing plugins can still be found there, but no new plugins or updates are being published.
+:::
+
 **Getting Started**
 
 - [Installation & Updating](/docs/installation)
+- [Migrating from PocketMine-MP (PMMP)](/docs/migrating-from-pocketmine-mp)
 - [Basic usage](/docs/basic-usage)
 - [Connecting](/docs/connecting)
 - [Configuration](/docs/configuration)

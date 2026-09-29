@@ -1,6 +1,7 @@
 ---
 title: "Plugins"
 outline: deep
+description: Troubleshooting plugin-related issues.
 ---
 
 # Plugins

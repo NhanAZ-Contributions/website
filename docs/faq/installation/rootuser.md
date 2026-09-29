@@ -1,6 +1,7 @@
 ---
 title: "Can’t install as user root"
 outline: deep
+description: Running the installer script as root is strongly discouraged due to security concerns. The installer does not require administrative privileges.
 ---
 
 # Can't install as user root

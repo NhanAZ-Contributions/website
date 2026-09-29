@@ -1,6 +1,7 @@
 ---
 title: "Inventory Transactions"
 outline: deep
+description: Inventory Transactions are a system used in Axolotl-PM for grouping changes to inventories.
 ---
 
 # Inventory Transactions

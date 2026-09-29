@@ -1,6 +1,7 @@
 ---
 title: "Using the pocketmine\\event\\Listener interface"
 outline: deep
+description: Using the pocketmine\event\Listener interface to listen for specific events in your plugin.
 ---
 
 # Using the `pocketmine\event\Listener` interface

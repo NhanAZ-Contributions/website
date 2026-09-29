@@ -1,6 +1,7 @@
 ---
 title: "Plugins"
 outline: deep
+description: How to install and update Axolotl-PM plugins from .phar files, and where to start if you want to write your own.
 ---
 
 # Plugins
@@ -12,6 +13,10 @@ A plugin is an external module which can be "plugged in" to your server to add c
 ## Downloading plugins
 
 You can find a wide range of premade plugins on the [Poggit Release](https://poggit.pmmp.io/plugins) plugin platform.
+
+::: warning Warning
+Poggit is now read-only. Existing plugins can still be found there, but no new plugins or updates are being published.
+:::
 
 ## Installing/updating a plugin
 

@@ -1,6 +1,7 @@
 ---
 title: "Event handler priority"
 outline: deep
+description: How to use event priority to control the order of event handlers.
 ---
 
 # Event handler priority

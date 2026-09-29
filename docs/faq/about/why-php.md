@@ -1,6 +1,7 @@
 ---
 title: "Why PHP?"
 outline: deep
+description: Why PHP was chosen for making Axolotl-PM (PocketMine).
 ---
 
 # Why PHP?
@@ -10,4 +11,6 @@ Back in its early days, PocketMine-MP (at the time known as [Pocket Minecraft PH
 Since PocketMine-MP was the only server software available for Minecraft PE at the time, it quickly grew in popularity and started to be used by thousands of servers.
 [Lifeboat Survival Games](https://lbsg.net) was one of the first big servers in Minecraft PE, and it was built using PocketMine-MP.
 
-Today, Axolotl-PM maintains its popularity because it's the oldest and most well known Bedrock server software out there, as well as being really easy to develop plugins for.
+PMMP was popular because it was the oldest and most well-known Bedrock server software out there, as well as being really easy to develop plugins for.
+
+Axolotl-PM is an actively maintained fork of PMMP, so it is written in PHP as well. PMMP plugins are compatible with Axolotl-PM unless they use the network API.

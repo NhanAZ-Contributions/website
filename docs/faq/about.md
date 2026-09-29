@@ -1,6 +1,7 @@
 ---
 title: "About Axolotl-PM"
 outline: deep
+description: Axolotl-PM is an actively maintained fork of PMMP.
 ---
 
 # About Axolotl-PM
