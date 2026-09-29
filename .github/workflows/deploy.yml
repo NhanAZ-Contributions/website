@@ -37,7 +37,7 @@ jobs:
       - name: Cache VitePress
         uses: actions/cache@v4
         with:
-          path: docs/.vitepress/cache
+          path: .vitepress/cache
           key: ${{ runner.os }}-vitepress-${{ hashFiles('index.md', 'docs/**','pnpm-lock.yaml') }}
           restore-keys: |
             ${{ runner.os }}-vitepress-
