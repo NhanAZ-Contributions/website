@@ -1,4 +1,5 @@
 import { defineConfig } from 'vitepress'
+import { tabsMarkdownPlugin } from "vitepress-plugin-tabs";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -6,7 +7,10 @@ export default defineConfig({
   description: "Official home for Axolotl-PM",
   // Sphinx curls quotes and dashes at render time (docutils smartquotes); this is the markdown-it equivalent.
   markdown: {
-    typographer: true
+    typographer: true,
+    config(md) {
+      md.use(tabsMarkdownPlugin)
+    }
   },
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
@@ -27,7 +31,8 @@ export default defineConfig({
               { text: 'Setup requirements', link: '/docs/installation/requirements' },
               { text: 'Using the official installer (Linux/MacOS only)', link: '/docs/installation/get-dot-axolotl-pm-dot-org' },
               { text: 'Using Docker (Linux only)', link: '/docs/installation/docker' },
-              { text: 'Installing/updating manually', link: '/docs/installation/installing-manually' }
+              { text: 'Installing/updating manually', link: '/docs/installation/installing-manually' },
+              { text: 'NetherNet Usage', link: '/docs/installation/nethernet-usage' }
             ]
           },
           { text: 'Basic usage', link: '/docs/basic-usage' },
