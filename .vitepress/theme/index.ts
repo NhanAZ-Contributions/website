@@ -6,6 +6,7 @@ import { enhanceAppWithTabs } from 'vitepress-plugin-tabs/client'
 import "@catppuccin/vitepress/theme/mocha/blue.css"
 import './content.css'
 import './footer.css'
+import './search.css'
 import { footerMessage } from '../footer'
 
 export default {

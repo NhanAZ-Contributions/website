@@ -1,6 +1,8 @@
 import { defineConfig } from 'vitepress'
 import { tabsMarkdownPlugin } from "vitepress-plugin-tabs";
 import { footerMessage } from './footer'
+import { documentSearchPlugin } from './search-plugin.mjs'
+import { searchIndexOptions } from './theme/search-engine.mjs'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -10,6 +12,9 @@ export default defineConfig({
     ['link', { rel: 'icon', href: '/favicon.ico' }]
   ],
   cleanUrls: true,
+  vite: {
+    plugins: [documentSearchPlugin()]
+  },
   lastUpdated: true,
   sitemap: {
     hostname: 'https://axolotl-pm.org'
@@ -29,6 +34,22 @@ export default defineConfig({
     }
   },
   themeConfig: {
+    search: {
+      provider: 'local',
+      options: {
+        _render(source, env, md) {
+          const html = md.render(source, env)
+          if (env.frontmatter?.search === false) return ''
+          // Remove code-language badges and separate adjacent blocks for indexing.
+          return html.replace(/<span class="lang">[^<]*<\/span>/g, '')
+            .replace(/<\/(?:p|li|pre|td|th|tr|div)>/g, '$& ')
+        },
+        miniSearch: {
+          options: searchIndexOptions
+        }
+      }
+    },
+
     // https://vitepress.dev/reference/default-theme-config
     footer: {
       message: footerMessage

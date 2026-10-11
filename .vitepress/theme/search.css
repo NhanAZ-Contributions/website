@@ -1,0 +1,272 @@
+/* Outrank VitePress's component styles, including their lazy dev injection. */
+.VPNavBar .VPNavBarSearch .DocSearch-Button {
+  border: 1px solid var(--vp-input-border-color);
+  background-color: var(--vp-input-switch-bg-color);
+  color: var(--vp-c-text-2);
+  transition: border-color 0.25s, color 0.25s;
+}
+.VPNavBar .VPNavBarSearch .DocSearch-Button:hover {
+  border-color: var(--vp-c-brand-1);
+  background-color: var(--vp-input-switch-bg-color);
+  color: var(--vp-c-text-1);
+}
+.VPNavBar .VPNavBarSearch .DocSearch-Button:focus-visible {
+  outline: 2px solid var(--vp-c-brand-1);
+  outline-offset: 3px;
+}
+.VPNavBar .VPNavBarSearch .DocSearch-Button-Keys { display: none; }
+@media (min-width: 768px) {
+  .VPNavBar .VPNavBarSearch {
+    flex-grow: 0;
+    flex-shrink: 0;
+    padding-left: 0;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+  .VPNavBar .VPNavBarSearch .DocSearch-Button {
+    height: 22px;
+    width: auto;
+    padding: 0 9px;
+    border-radius: 11px;
+  }
+  .VPNavBar .VPNavBarSearch .DocSearch-Button-Container { gap: 6px; }
+  .VPNavBar .VPNavBarSearch .DocSearch-Search-Icon {
+    top: 0;
+    width: 12px;
+    height: 12px;
+    margin: 0;
+    color: currentColor;
+  }
+  .VPNavBar .VPNavBarSearch .DocSearch-Button-Placeholder {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    line-height: 18px;
+    color: currentColor;
+  }
+}
+@media (max-width: 767px) {
+  .VPNavBar .VPNavBarSearch { margin-right: 8px; }
+  .VPNavBar .VPNavBarSearch .DocSearch-Button,
+  .VPNavBar .VPNavBarSearch .DocSearch-Button:hover {
+    width: 44px;
+    height: 44px;
+    border-radius: 22px;
+    border-color: transparent;
+    background-color: transparent;
+  }
+}
+
+.documentation-search {
+  position: fixed;
+  z-index: 200;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 72px 24px 24px;
+  background: var(--vp-backdrop-bg-color);
+  backdrop-filter: blur(3px);
+}
+.search-modal-enter-active,
+.search-modal-leave-active { transition: opacity 0.25s ease; }
+.search-modal-enter-active .search-dialog,
+.search-modal-leave-active .search-dialog { transition: transform 0.25s ease; }
+.search-modal-enter-from,
+.search-modal-leave-to { opacity: 0; }
+.search-modal-enter-from .search-dialog,
+.search-modal-leave-to .search-dialog { transform: translateY(-8px); }
+.search-modal-leave-active { pointer-events: none; }
+.documentation-search .sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+.search-dialog {
+  width: min(100%, 680px);
+  max-height: calc(100dvh - 96px);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 12px;
+  background: var(--vp-c-bg-soft);
+  box-shadow: 0 16px 60px rgb(0 0 0 / 25%);
+  color: var(--vp-c-text-1);
+}
+.search-form {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  gap: 8px;
+  margin: 12px;
+  padding: 0 10px;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 8px;
+  background: var(--vp-c-bg);
+}
+.search-form:focus-within { border-color: var(--vp-c-brand-1); }
+.search-symbol { width: 22px; height: 22px; flex: none; stroke-width: 1.7; color: var(--vp-c-brand-1); }
+.search-form input {
+  flex: 1;
+  width: 0;
+  min-width: 0;
+  height: 52px;
+  color: var(--vp-c-text-1);
+  background: transparent;
+  font-size: 16px;
+  outline: none;
+}
+.search-form input::-webkit-search-cancel-button { display: none; }
+.search-form input::placeholder { color: var(--vp-c-text-3); }
+@supports (caret-animation: manual) {
+  .search-form input:focus { caret-animation: manual; }
+  @media (prefers-reduced-motion: no-preference) {
+    .search-form input:focus { animation: search-caret 1.2s ease-in-out infinite; }
+  }
+}
+@keyframes search-caret {
+  0%, 15%, 100% { caret-color: var(--vp-c-text-1); }
+  50%, 65% { caret-color: transparent; }
+}
+.search-form button {
+  flex: none;
+  min-width: 36px;
+  min-height: 44px;
+  border-radius: 5px;
+  color: var(--vp-c-text-2);
+}
+.search-form button:hover { color: var(--vp-c-brand-1); }
+.search-clear { font-size: 26px; }
+.search-close { font-size: 12px; }
+.documentation-search button:focus-visible,
+.search-result:focus-visible {
+  outline: 2px solid var(--vp-c-brand-1);
+  outline-offset: 2px;
+}
+.search-content {
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  padding: 0 12px 12px;
+  scrollbar-gutter: stable;
+  scrollbar-width: thin;
+  scrollbar-color: var(--vp-c-text-3) transparent;
+}
+.search-reveal { animation: search-reveal 0.25s ease; }
+@keyframes search-reveal {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@supports selector(::-webkit-scrollbar) {
+  .search-content { scrollbar-width: auto; scrollbar-color: auto; }
+  .search-content::-webkit-scrollbar { width: 6px; height: 6px; }
+  .search-content::-webkit-scrollbar-track { background: transparent; }
+  .search-content::-webkit-scrollbar-thumb { background: var(--vp-c-text-3); border-radius: 6px; }
+  .search-content::-webkit-scrollbar-thumb:hover { background: var(--vp-c-text-2); }
+  .search-content::-webkit-scrollbar-button { display: none; width: 0; height: 0; }
+  .search-content::-webkit-scrollbar-corner { background: transparent; }
+}
+.search-empty { padding: 40px 16px; text-align: center; font-size: 14px; color: var(--vp-c-text-2); }
+.search-empty p { margin-bottom: 8px; }
+.search-empty button { color: var(--vp-c-brand-1); text-decoration: underline; }
+.search-notice { margin: 0 4px 12px; font-size: 13px; line-height: 1.6; color: var(--vp-c-text-2); }
+.search-groups, .search-groups ul { list-style: none; margin: 0; padding: 0; }
+.search-group + .search-group { margin-top: 16px; }
+.search-group-title { padding: 8px 6px; color: var(--vp-c-brand-1); font-size: 13px; line-height: 1.5; font-weight: 600; }
+.search-group ul { display: flex; flex-direction: column; gap: 4px; }
+.search-result {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  border: 1px solid transparent;
+  border-radius: 7px;
+  background: var(--vp-c-bg);
+  color: var(--vp-c-text-1);
+  text-decoration: none;
+}
+.search-result.selected { background: var(--vp-c-brand-soft); border-color: var(--vp-c-brand-1); }
+.search-row-icon { width: 18px; flex: none; font-size: 20px; color: var(--vp-c-text-3); text-align: center; }
+.search-result.selected .search-row-icon { color: var(--vp-c-brand-1); }
+.search-row-content { flex: 1; min-width: 0; }
+.search-row-title { font-size: 14px; font-weight: 500; line-height: 1.5; overflow-wrap: anywhere; }
+.search-ancestry { display: block; font-size: 11px; line-height: 1.5; color: var(--vp-c-text-3); overflow-wrap: anywhere; }
+.search-snippet {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin: 4px 0 0;
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--vp-c-text-2);
+  overflow-wrap: anywhere;
+}
+.documentation-search mark { background: transparent; color: var(--vp-c-brand-1); font-weight: 600; }
+.search-enter { color: var(--vp-c-brand-1); opacity: 0; }
+.search-result.selected .search-enter { opacity: 1; }
+.search-history { display: flex; flex-direction: column; gap: 6px; list-style: none; margin: 0; padding: 0; }
+.search-saved > section + section { margin-top: 16px; }
+.search-history-row {
+  display: flex;
+  align-items: center;
+  border: 1px solid transparent;
+  border-radius: 7px;
+  background: var(--vp-c-bg);
+}
+.search-history-row.selected { background: var(--vp-c-brand-soft); border-color: var(--vp-c-brand-1); }
+.search-history-row .search-result { flex: 1; min-width: 0; border: 0; background: transparent; }
+.search-history-icon { width: 22px; height: 22px; flex: none; stroke-width: 1.6; color: var(--vp-c-text-2); }
+.search-history-page { margin: 2px 0 0; font-size: 12px; line-height: 1.5; color: var(--vp-c-text-2); overflow-wrap: anywhere; }
+.search-history-remove { flex: none; min-width: 44px; min-height: 44px; margin-right: 4px; border-radius: 5px; background: transparent; font-size: 24px; color: var(--vp-c-text-2); }
+.search-history-remove:hover { color: var(--vp-c-brand-1); }
+.search-history-star { display: grid; place-items: center; flex: none; width: 44px; height: 44px; border-radius: 5px; background: transparent; color: var(--vp-c-text-2); }
+.search-history-star svg { width: 20px; height: 20px; stroke-width: 1.6; }
+.search-history-star[aria-pressed='true'] { color: var(--vp-c-text-1); }
+.dark .search-history-star[aria-pressed='true'] { color: #fff; }
+.search-history-action-space { flex: none; width: 48px; }
+.search-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+  padding: 12px 16px;
+  border-top: 1px solid var(--vp-c-divider);
+  background: var(--vp-c-bg);
+  color: var(--vp-c-text-2);
+  font-size: 11px;
+}
+.search-shortcuts { display: flex; align-items: center; gap: 5px; }
+.search-footer kbd { min-width: 20px; padding: 0 4px; border: 1px solid var(--vp-c-divider); border-radius: 3px; text-align: center; font-family: inherit; }
+@media (max-width: 767px) {
+  .documentation-search { padding: 0; }
+  .search-modal-enter-from .search-dialog,
+  .search-modal-leave-to .search-dialog { transform: none; }
+  .search-dialog { width: 100%; height: 100dvh; max-height: 100dvh; border: 0; border-radius: 0; }
+  .search-form {
+    margin: max(12px, env(safe-area-inset-top)) max(12px, env(safe-area-inset-right))
+      12px max(12px, env(safe-area-inset-left));
+    padding: 0 8px;
+    gap: 4px;
+  }
+  .search-form button { min-width: 44px; }
+  .search-symbol { width: 18px; height: 18px; }
+  .search-content { flex: 1; }
+  .search-result { gap: 8px; padding: 10px; }
+  .search-footer { padding-bottom: max(12px, env(safe-area-inset-bottom)); }
+  .search-shortcuts { display: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .search-reveal { animation: none; }
+  .search-modal-enter-active,
+  .search-modal-leave-active,
+  .search-modal-enter-active .search-dialog,
+  .search-modal-leave-active .search-dialog { transition: none; }
+}
