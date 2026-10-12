@@ -1,0 +1,8 @@
+{
+  "sourceCommit": "0137662bbed8fbf0f3333af781453cbbda22ef53",
+  "vitepressVersion": "1.6.4",
+  "repository": "axolotl-pm/website",
+  "base": "/website/previews/vitepress-native-0137662/",
+  "configurationChange": "themeConfig.search.provider = 'local'",
+  "variant": "vitepress-native"
+}
