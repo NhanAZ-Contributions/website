@@ -1,0 +1,8 @@
+{
+  "pullRequestHead": "9f14c22779bf3129f11c1b414f9c069eaad649c3",
+  "repository": "NhanAZ-Contributions/website",
+  "pullRequest": "https://github.com/axolotl-pm/website/pull/1",
+  "base": "/website/previews/pr-1/native-9f14c22779bf/",
+  "variant": "PR #1 with native VitePress search",
+  "changesForComparison": "Replace custom search only with local provider; keep the rest of PR content"
+}
